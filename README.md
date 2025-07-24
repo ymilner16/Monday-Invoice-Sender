@@ -1,6 +1,6 @@
 # Monday Invoice to Teams Tool
 
-This tool is used to send the latest monday.com invoice via Teams
+This tool is used to send the latest monday.com invoice via Teams\
 **This project is still a WIP, currently only saves your latest invoice to /tmp/Monday_Invoice.pdf**
 
 ## How to run
