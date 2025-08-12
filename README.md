@@ -1,6 +1,6 @@
 # Monday Invoice to Gmail Tool
 
-This tool is used to send the latest monday.com invoice via Google Workspace (Gmail)\
+This tool is used to send the latest monday.com invoice via Google Workspace (Gmail)
 
 ## How to run
 Currently, to run the tool you need to create a venv with all modules from the requirements.txt file.\
