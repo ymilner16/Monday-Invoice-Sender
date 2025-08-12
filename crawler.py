@@ -19,12 +19,15 @@ def login(URL, EMAIL, PASS):
 
 def getInvoiceURL():
     global driver
-    menu_button = driver.find_element(By.XPATH, "/html/body/div[1]/div[5]/div[3]/div/div/main/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[5]/button")
- #   view_invoice = driver.find_element(By.TAG_NAME, "ul")
+    #select and open the latest tax invoice
+    menu_button = driver.find_element(By.CSS_SELECTOR, 'button[data-testid="menu-button"]:first-of-type')
     menu_button.click()
+    time.sleep(1)
     view_invoice = driver.find_element(By.XPATH, '//*[@id="menu-0"]')
     view_invoice.click()
+    view_invoice.click()
     time.sleep(4)
+    #switch to invoice window and return the url
     original_window = driver.current_window_handle
     for window_handle in driver.window_handles:
         if window_handle != original_window:
